@@ -13,6 +13,22 @@
   }
 }
 
+
+.elementos-dibujos {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+@media screen and (max-width: 1080px) {
+  .elementos-dibujos {
+    display: inline-block;
+  }
+}
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -32,7 +48,14 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.image-container img {
+  border: 3px solid #000;
+  border-radius: 10px;
+  background-color: 'white'
 }
